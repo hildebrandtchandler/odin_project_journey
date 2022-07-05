@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Lesson 1
     <script>
         console.log(23+97);
         console.log(18+54+28+92+46+72);
@@ -21,6 +22,19 @@
         var actual = MAX-13;
         var percentage = actual / MAX;
         console.log(percentage);
+    </script>
+    -->
+
+    <button>Press me</button>
+    <script>
+        const button = document.querySelector('button');
+
+        function greet () {
+            const name = prompt('What is your name?');
+            alert(`Hello ${name}, nice to see you!`);
+        }
+
+        button.addEventListener('click', greet);
     </script>
 </body>
 </html>
