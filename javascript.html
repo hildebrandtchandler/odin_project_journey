@@ -38,5 +38,31 @@
         button.addEventListener('click', greet);
     </script>
     -->
+
+    <!-- Fundamentals part 2: conditionals, step 3
+    <script>
+        const name = prompt('Who\'s there?');
+
+        if (name === 'Admin'){
+            const password = prompt('Password?');
+
+            if  (password === 'TheMaster') {
+                alert('Welcome!');
+            }
+            else if (password === '' || password === null) {
+                alert('Canceled');
+            }
+            else {
+                alert('Wrong Password');
+            }
+        }
+        else if (name === '' || name === null ){
+            alert('Canceled');
+        }
+        else { 
+            (alert('I don\'t know you'));
+        }
+    </script>
+    -->
 </body>
 </html>
