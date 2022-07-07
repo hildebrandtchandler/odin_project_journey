@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Fundamentals part 1
-    <script>
+   <!-- Fundamentals part 1
+     <script>
         console.log(23+97);
         console.log(18+54+28+92+46+72);
         console.log((4+6+9)/77);
@@ -22,7 +22,7 @@
         var actual = MAX-13;
         var percentage = actual / MAX;
         console.log(percentage);
-    </script>
+     </script>
     -->
 
     <!-- Fundamentals part 2: Strings
@@ -65,7 +65,7 @@
     </script>
     -->
 
-    <!-- Fundamentals part 2: conditionals, step 3, exercise "The Name of Javascript"
+    <!-- Fundamentals part 2: conditionals, step 5, exercise "The Name of Javascript"
     <script>
         let name = prompt("What's the \"official\" name of JavaScript?");
         
@@ -79,7 +79,7 @@
     </script>
     -->
 
-    <!-- Fundamentals part 2: Conditionals, Step 3, Exercise "Show the sign"-->
+    <!-- Fundamentals part 2: Conditionals, Step 5, Exercise "Show the sign"
     <script>
         let entry = prompt("Enter a Number");
 
@@ -93,5 +93,93 @@
             alert(0);
         }
     </script>
+    -->
+    
+    <!-- Fundamentals part 2: Conditionals, Step 6 "Switch"
+    <script>    
+        const day = new Date().getDay();
+        
+        switch (day){
+            case 0:
+                alert("It's Sunday, time to relax!");
+                break;
+            case 1:
+                alert("Happy Monday!");
+                break;
+            case 2:
+                alert("It's Tuesday. You got this!");
+                break;
+            case 3:
+                alert("Hump day already!");
+                break;
+            case 4:
+                alert("Just one more day 'til the weekend!");
+                break;
+            case 5:
+                alert("Happy Friday!");
+                break;
+            case 6:
+                alert("Have a wonderful Saturday!");
+                break;
+            default:
+                alert("Your date isn't set!");
+        }
+    </script>
+    -->
+
+    <!--Fundamentals part 2: Conditionals, Step 6 "Switch Ranges"
+    <script>
+        const grade = prompt("Enter the percentage grade")
+
+        switch(true){
+            
+            case grade >= 90:
+                alert("A");
+                break;
+            case grade >= 80:
+                alert("B");
+                break;
+            case grade >= 70:
+                alert("C");
+                break;
+            case grade >= 60:
+                alert("D");
+                break;
+            default:
+                alert("F");
+        }
+    </script>
+    -->
+
+    <!-- Fundamentals part 2: Conditionals, Step 6 "Multiple Cases"
+    <script>
+        const month = new Date().getMonth();
+
+        switch (month) {
+            case 0:
+            case 1:
+            case 2:
+                alert("Winter");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                alert("Spring");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                alert("Summer");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                alert("Winter");
+                break;
+            default:
+                alert("Please set your calendar.");
+        }
+    </script>
+    -->
 </body>
 </html>
