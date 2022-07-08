@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-   <!-- Fundamentals part 1
+   <!-- Foundations: Fundamentals part 1
      <script>
         console.log(23+97);
         console.log(18+54+28+92+46+72);
@@ -25,7 +25,7 @@
      </script>
     -->
 
-    <!-- Fundamentals part 2: Strings
+    <!-- Foundations: Fundamentals part 2: Strings
     <button>Press me</button>
     <script>
         const button = document.querySelector('button');
@@ -39,7 +39,7 @@
     </script>
     -->
 
-    <!-- Fundamentals part 2: conditionals, step 3
+    <!-- Foundations: Fundamentals part 2: conditionals, step 3
     <script>
         const name = prompt('Who\'s there?');
 
@@ -65,7 +65,7 @@
     </script>
     -->
 
-    <!-- Fundamentals part 2: conditionals, step 5, exercise "The Name of Javascript"
+    <!-- Foundations: Fundamentals part 2: conditionals, step 5, exercise "The Name of Javascript"
     <script>
         let name = prompt("What's the \"official\" name of JavaScript?");
         
@@ -79,7 +79,7 @@
     </script>
     -->
 
-    <!-- Fundamentals part 2: Conditionals, Step 5, Exercise "Show the sign"
+    <!-- Foundations: Fundamentals part 2: Conditionals, Step 5, Exercise "Show the sign"
     <script>
         let entry = prompt("Enter a Number");
 
@@ -95,7 +95,7 @@
     </script>
     -->
     
-    <!-- Fundamentals part 2: Conditionals, Step 6 "Switch"
+    <!-- Foundations: Fundamentals part 2: Conditionals, Step 6 "Switch"
     <script>    
         const day = new Date().getDay();
         
@@ -127,7 +127,7 @@
     </script>
     -->
 
-    <!--Fundamentals part 2: Conditionals, Step 6 "Switch Ranges"
+    <!-- Foundations: Fundamentals part 2: Conditionals, Step 6 "Switch Ranges"
     <script>
         const grade = prompt("Enter the percentage grade")
 
@@ -151,7 +151,7 @@
     </script>
     -->
 
-    <!-- Fundamentals part 2: Conditionals, Step 6 "Multiple Cases"
+    <!-- Foundations: Fundamentals part 2: Conditionals, Step 6 "Multiple Cases"
     <script>
         const month = new Date().getMonth();
 
@@ -178,6 +178,32 @@
                 break;
             default:
                 alert("Please set your calendar.");
+        }
+    </script>
+    -->
+    
+    <!-- Foundations: Fundamentals part 3 Assignment
+    <script>
+        function add7(num){
+            return(num + 7);
+        }
+        
+        function multiply(num1, num2){
+            return(num1 * num2);
+        }
+
+        function capitalize(word) {
+            word = word.toString();
+            word = word.toLowerCase();
+            let firstLetter = word.slice(0,1);
+            let remainingLetters = word.slice(1);
+            firstLetter = firstLetter.toUpperCase();
+            return (firstLetter + remainingLetters);
+        }
+
+        function lastLetter(word) {
+            word = word.slice(-1);
+            return word;
         }
     </script>
     -->
