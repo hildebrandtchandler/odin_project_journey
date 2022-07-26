@@ -1,4 +1,6 @@
-// Foundations DOM manipulation and events
+/*
+// Foundations DOM manipulation and events exercise
+
 const container = document.querySelector('#container');
 
 const content = document.createElement('div');
@@ -34,3 +36,58 @@ secondParagraph.textContent = 'ME TOO!';
 secondDiv.appendChild(secondParagraph);
 
 container.appendChild(secondDiv);
+*/
+
+/*
+// Foundations: DOM manipulation and events: Events: Method 2
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello World");
+*/
+
+/*
+//Foundations: DOM manipulation and events: Events: Method 3
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+    alert("Hello World");
+});
+*/
+
+/*
+//Foundations: DOM manipulation and events: Events: named functions
+function alertFunction() {
+    alert('YAY! YOU DID IT!');
+}
+
+const btn = document.querySelector('#btn');
+/*
+//Method 2
+btn.onclick = alertFunction;
+*/
+
+/*
+//Method 3
+btn.addEventListener('click', alertFunction);
+*/
+
+//Passing a parameter
+/*
+btn.addEventListener('click', function (e) {
+    console.log(e);
+});
+*/
+
+/*
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+});
+*/
+
+/*
+//Foundations: DOM manipulation and events: Events: Attaching listeners to groups of nodes
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
+*/
